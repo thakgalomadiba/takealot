@@ -1,0 +1,87 @@
+<ion-tabs>
+
+  <!-- HOME TAB -->
+<ion-tab tab="home">
+<homepage></homepage>
+</ion-tab>
+
+  <!-- Category tab -->
+  <ion-tab tab="category">
+    <ion-content>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Categories</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-item *ngFor="let category of categories">
+        <ion-label>{{ category.name }}</ion-label>
+      </ion-item>
+    </ion-content>
+  </ion-tab>
+
+  <!-- Deals tab -->
+  <ion-tab tab="Deals">
+    <ion-content>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Deals</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <div class="example-content">Deals content</div>
+    </ion-content>
+  </ion-tab>
+
+  <!-- Lists tab -->
+  <ion-tab tab="lists">
+    <ion-content>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Lists</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <div class="example-content">List content</div>
+    </ion-content>
+  </ion-tab>
+
+  <!-- Account tab -->
+  <ion-tab tab="account">
+    <ion-content>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Account</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <div class="example-content">Account content</div>
+    </ion-content>
+  </ion-tab>
+
+  <!-- Bottom tab bar -->
+  <ion-tab-bar slot="bottom">
+  <ion-tab-button tab="home">
+    <ion-icon name="home-outline"></ion-icon>
+    <ion-label>Home</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="category">
+    <ion-icon name="grid-outline"></ion-icon>
+    <ion-label>Categories</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="Deals">
+    <ion-icon name="pricetags-outline"></ion-icon>
+    <ion-label>Deals</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="lists">
+    <ion-icon name="list-outline"></ion-icon>
+    <ion-label>List</ion-label>
+  </ion-tab-button>
+
+  <ion-tab-button tab="account">
+    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+    <ion-label>Account</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>
+
+
+</ion-tabs>

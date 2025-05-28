@@ -1,0 +1,56 @@
+
+ion-content {
+  --padding-start: 0px;
+  --padding-end: 0px;
+}
+
+ion-col {
+  padding: 0px;
+}
+
+.product-card {
+  border: 1px solid #D3D3D3;
+  border-radius: 0px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 2px 2px;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  
+}
+
+.product-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 4px;
+}
+
+.product-price {
+  font-size: 13px;
+  font-weight: 500;
+  color: #3880ff;
+}
+ion-searchbar.custom-searchbar {
+  --background: #ffffff00; 
+  --color: #ffffff;
+  --placeholder-color: #aaaaaa;
+  --icon-color: #aaaaaa;
+  --border-radius: 1px;
+  --padding-start: 12px;
+  --padding-end: 12px;
+  font-size: 14px;
+  
+}
+.logo-img {
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-top: 10px;
+  
+}
