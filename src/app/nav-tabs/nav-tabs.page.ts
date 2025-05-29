@@ -17,13 +17,15 @@ import { RouterModule } from '@angular/router';
 })
 export class NavTabsPage implements OnInit {
 
-  
+  products: Product[] = [];
   categories: Category[] = [];  
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    
+    this.http.get<Product[]>('assets/data/products.json').subscribe(data => {
+      this.products = data;
+    });
 
     this.http.get<{ categories: Category[] }>('assets/data/categories.json').subscribe(data => {
       this.categories = data.categories;
@@ -36,4 +38,11 @@ export class NavTabsPage implements OnInit {
 interface Category {
   id: number;
   name: string;
+}
+interface Product {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  imageUrl: string;
 }

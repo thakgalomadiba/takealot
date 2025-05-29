@@ -17,24 +17,15 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class HomePage implements OnInit {
 
-  products: Product[] = [];
+  
 
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
 
-    this.http.get<Product[]>('assets/data/products.json').subscribe(data => {
-      this.products = data;
-    });
+    
   }
 
 }
 
 
-interface Product {
-  id: number;
-  name: string;
-  description: string;
-  price: number;
-  imageUrl: string;
-}
