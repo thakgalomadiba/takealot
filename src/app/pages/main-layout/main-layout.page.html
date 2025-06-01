@@ -1,0 +1,20 @@
+<ion-page>
+  <ion-router-outlet></ion-router-outlet>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button [routerLink]="['/main-layout/home']">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/main-layout/categories']">
+      <ion-icon name="grid-outline"></ion-icon>
+      <ion-label>Categories</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/main-layout/account']">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Account</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-page>
